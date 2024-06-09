@@ -1,0 +1,446 @@
+/* root */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* promenne */
+:root {
+  --dark_brown: #33292a;
+  --light_brown: #644b4f;
+  --light_black: #333333;
+  --light_gray: #f2f2f2;
+  --white: #fff;
+  --light_orange: #efa69d;
+  --darker_orange: #e9877b;
+  --button_red: #b9494b;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+}
+
+.content-container {
+  max-width: 1000px;
+  height: 100%;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .content-container {
+    margin: auto 30px;
+  }
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Navigace */
+
+.navigation {
+  background-color: var(--dark_brown);
+}
+
+nav {
+  height: 50px;
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+nav li {
+  padding: 15px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+nav li a:hover {
+  color: var(--darker_orange);
+}
+
+.menu-icon {
+  display: none;
+  width: 30px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: 20px;
+  cursor: pointer;
+  padding-top: 10px;
+}
+
+.menu-icon img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+  .menu-icon {
+    display: block;
+  }
+}
+
+/* Hero section */
+
+.hero-section {
+  background-image: url(images/scott-goodwill-y8Ngwq34_Ak-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(100vh - 50px);
+}
+
+.hero-wrapper {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  height: 100%;
+}
+.hero-heading {
+  color: var(--white);
+  font-size: 68px;
+  text-align: right;
+  margin-bottom: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-heading {
+    font-size: 50px;
+    right: 50px;
+  }
+}
+
+/* O nás */
+
+.about-us-section {
+  padding: 100px 0;
+}
+
+.about-us-wrapper {
+  gap: 15px;
+  display: flex;
+}
+
+.about-us-content {
+  flex: 1 0 100px;
+}
+
+.about-us-content h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.about-us-photo {
+  flex: 1 0 100px;
+}
+
+.about-us-photo img {
+  border-radius: 5px;
+  height: 300px;
+  object-position: bottom;
+}
+
+@media screen and (max-width: 768px) {
+  .about-us-wrapper {
+    flex-direction: column;
+  }
+}
+
+/* Co děláme */
+
+.what-we-do-section {
+  background-color: var(--dark_brown);
+  color: var(--white);
+  padding: 100px 0;
+}
+
+.what-we-do-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.what-we-do-content h2 {
+  font-size: 32px;
+  text-align: center;
+  margin: 10px;
+}
+
+.what-we-do-content p {
+  text-align: center;
+}
+
+.icon-container {
+  margin: 30px 0;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.icon-wrapper {
+  max-width: 150px;
+  flex: 1 0 100px;
+}
+
+.icon {
+  width: 100%;
+  padding: 30px;
+}
+
+.icon img {
+  width: 100%;
+}
+
+.text {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .icon-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+/* Naše výlety / Galerie */
+
+.our-trips-section {
+  padding: 100px 0;
+}
+
+.gallery-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.gallery-item {
+  width: calc(100% / 3 - 20px);
+  height: 200px;
+  margin: auto;
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center;
+}
+
+.photo1 {
+  background-image: url(images/simon-english-48nerZQCHgo-unsplash.jpg);
+}
+
+.photo2 {
+  background-image: url(images/james-wheeler-ZOA-cqKuJAA-unsplash.jpg);
+}
+
+.photo3 {
+  background-image: url(images/daniel-tseng-73lmMKhi2U8-unsplash.jpg);
+}
+
+.photo4 {
+  background-image: url(images/holly-mandarich-UVyOfX3v0Ls-unsplash.jpg);
+}
+
+.photo5 {
+  background-image: url(images/patrick-szylar-45bM3XGqnDE-unsplash.jpg);
+}
+
+.photo6 {
+  background-image: url(images/chung-yee-tsang-wqxCKM0R6R8-unsplash.jpg);
+}
+
+.photo7 {
+  background-image: url(images/julian-bialowas-ilkTnuMunP8-unsplash.jpg);
+}
+
+.photo8 {
+  background-image: url(images/matej-drha-rbDzMcJsBkY-unsplash.jpg);
+}
+
+.our-trips-text {
+  background-color: var(--light_gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .gallery-item {
+    width: 100%;
+  }
+  .our-trips-text {
+    height: 100px;
+  }
+}
+
+/* Kam jít */
+.where-to-go-section {
+  background-color: var(--light_brown);
+  color: var(--white);
+  padding: 100px 0;
+}
+
+.where-to-go-wrapper {
+  display: flex;
+}
+
+.where-to-go-heading {
+  flex: 1;
+  margin-right: 50px;
+}
+
+.where-to-go-heading h2 {
+  font-size: 32px;
+}
+
+.where-to-go-content {
+  flex: 2;
+}
+
+.where-to-go-text {
+  padding-bottom: 20px;
+}
+
+.note {
+  padding-bottom: 40px;
+}
+
+button {
+  padding: 10px;
+  border-radius: 5px;
+  border-style: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: var(--button_red);
+  color: var(--light_gray);
+}
+
+@media screen and (max-width: 768px) {
+  .where-to-go-wrapper {
+    display: block;
+  }
+
+  .where-to-go-heading h2 {
+    padding-bottom: 40px;
+  }
+
+  .note {
+    padding-bottom: 50px;
+  }
+}
+
+/* Recenze */
+
+.review-section {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.review-heading {
+  max-width: 400px;
+  margin: auto;
+  margin-bottom: 80px;
+}
+
+.review-heading h2 {
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+.review-wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.review-card {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.review-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.review-text {
+  margin-top: 20px;
+}
+
+.review-name {
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .review-wrapper {
+    flex-direction: column;
+  }
+}
+
+/* Fotky */
+
+.photo-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.photo-item {
+  flex: 1 1 50%;
+}
+
+.photo-container div img {
+  height: 100%;
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .photo-item {
+    flex: 1 1 100%;
+  }
+}
+
+/* Zápatí */
+
+.footer {
+  background-color: var(--light_black);
+  padding-top: 50px;
+  text-align: center;
+}
+
+.contact {
+  padding: 15px 0;
+}
+
+.contact a {
+  color: var(--light_orange);
+}
+
+.contact a:hover {
+  color: var(--darker_orange);
+}
+
+.footer-text {
+  color: var(--white);
+  padding-bottom: 20px;
+}
